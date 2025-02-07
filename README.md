@@ -127,3 +127,14 @@ VALUES
     (1, 'Video', 'https://example.com/video-ia'),
     (2, 'PDF', 'https://example.com/pdf-unity'),
     (3, 'Enlace', 'https://example.com/enlace-datos');
+
+
+
+
+SHOW TABLES;
+SELECT * FROM Instructores;
+SELECT * FROM Cursos;
+SELECT * FROM Usuarios;
+SELECT * FROM Certificaciones;
+SELECT * FROM Progreso_Usuario;
+SELECT * FROM Recursos;
