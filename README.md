@@ -1,5 +1,23 @@
-# -SQL-Server
+# Base de Datos NVIDIA_Education
 
+Este repositorio contiene el código SQL para crear la base de datos `NVIDIA_Education`, sus tablas e insertar datos de ejemplo.
+
+## Estructura de la Base de Datos
+
+La base de datos consta de las siguientes tablas:
+
+1. **Instructores**: Almacena información sobre los instructores.
+2. **Cursos**: Contiene los cursos ofrecidos.
+3. **Usuarios**: Registra los usuarios de la plataforma.
+4. **Certificaciones**: Almacena las certificaciones disponibles.
+5. **Progreso_Usuario**: Registra el progreso de los usuarios en los cursos y certificaciones.
+6. **Recursos**: Contiene recursos adicionales asociados a los cursos.
+
+## Código SQL
+
+A continuación, se muestra el código SQL para crear la base de datos, las tablas e insertar datos de ejemplo:
+
+```sql
 -- Eliminar la base de datos si ya existe
 DROP DATABASE IF EXISTS NVIDIA_Education;
 
@@ -109,12 +127,3 @@ VALUES
     (1, 'Video', 'https://example.com/video-ia'),
     (2, 'PDF', 'https://example.com/pdf-unity'),
     (3, 'Enlace', 'https://example.com/enlace-datos');
-
-
-SHOW TABLES;
-SELECT * FROM Instructores;
-SELECT * FROM Cursos;
-SELECT * FROM Usuarios;
-SELECT * FROM Certificaciones;
-SELECT * FROM Progreso_Usuario;
-SELECT * FROM Recursos;
